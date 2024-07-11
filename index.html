@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Planificador Diario</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Planificador</h1>
+        <button id="btn-color" class="btn-color" onclick="cambiarModo()" ><i class="fa-regular fa-lightbulb"></i></button>
+    </header>
+    <main class="contenedor">
+        <section class="tareas">
+
+            <article class="contenedorTareas" >
+                <div class="agregar">
+                    <input id="nuevaTarea" type="text" placeholder="Agrega tarea nueva aqui">
+                    <button id="agregarTarea" class="btnTarea">Agregar Tarea</button> 
+                </div>
+                
+                <ul class="listaTareas" id="listaTareas">
+                   
+                </ul>
+            </article>
+
+            <article class="contenedorTareas2">
+                <div id="calendar">
+                    <div id="calendar-header">
+                        <button id="prev">Anterior</button>
+                        <h2 id="month-year"></h2>
+                        <button id="next">Siguiente</button>
+                    </div>
+                    <table id="calendar-body">
+                        <thead>
+                            <tr>
+                                <th>Dom</th>
+                                <th>Lun</th>
+                                <th>Mar</th>
+                                <th>Mié</th>
+                                <th>Jue</th>
+                                <th>Vie</th>
+                                <th>Sáb</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Días del calendario se generarán aquí -->
+                        </tbody>
+                    </table>
+                </div>
+               
+            </article>
+
+            <article class="contenedorTareas3">
+                <section class="box-cont">
+                    <div class="contenedor">
+                        <h2>Recordatorio</h2>
+                        <input id="inputContenedor" type="text"  placeholder="Ingresar Recordatorio" maxlength="100px">
+                        <button id="agregarCita" class="agregarCita">Agregar</button>
+                        
+                    </div>
+                    <div class="ulCitas">
+                        <ul class="citasLista">
+                            
+                        </ul>
+                    </div>
+
+                </section>
+                <section class="box-cont">
+                    <div class="contenedor">
+                        <h2>Nota</h2>
+                        <input class="inputContent" type="text"   placeholder="Nota del dia">
+                        <button id="agregarNota" class="agregarNota">Agregar</button> 
+                    </div>
+                    <p class="agregarNotaP" id="agregarNotaP">
+                        
+                    </p>
+                    
+                </section>
+            </article>
+            
+            
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <div class="derechos">
+            <p>Derechos Reservados</p>
+            <p>Keidis Suarez</p>  
+        </div>
+        
+        <div class="redes">
+            <button class="correo">
+                <a target="_blank" href="https://workspace.google.com/intl/es-419/lp/gmail/?utm_source=google&utm_medium=cpc&utm_campaign=latam-CL-all-es-dr-bkws-all-all-trial-b-dr-1707806-LUAC0020145&utm_content=text-ad-none-any-DEV_c-CRE_666314336384-ADGP_Hybrid+%7C+BKWS+-+BRO+%7C+Txt-General-Email-KWID_43700078541426120-kwd-262778476&utm_term=KW_google%20email-ST_google+email&gad_source=1&gclid=Cj0KCQjw-ai0BhDPARIsAB6hmP5RtFZ5YBJEWj-8Mr7hixtTn-T3H5UBDjwCtD9bcE2tm5XUJofNxk4aAsv2EALw_wcB&gclsrc=aw.ds">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                
+            </button>
+            <button class="github">
+                <a href="https://github.com/keidis15" target="_blank"><i class="fa-brands fa-github"></i></a>
+                
+            </button>
+        </div>
+    </footer>
+
+
+
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

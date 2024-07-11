@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+
+}
+
+header{
+    background-image: url(./img/fondopagina.png);
+    background-repeat: repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    margin: 0px 0 5px 0;
+    
+
+    h1{
+        font-family: cursive;
+    }
+    .btn-color{
+        font-size: 30px;
+        background: transparent;
+        cursor: pointer;
+        border: 1px solid #000;
+        border: transparent;
+        color: #000;
+        
+        
+    }
+}
+.tareas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .contenedorTareas{
+        background-color: #ffe5ec73;
+        padding: 10px;
+        flex: 1 1 30%;
+        width: 400px;
+        height: 500px;
+        overflow:auto;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+
+        .agregar{
+            display: flex;
+            
+
+            input{
+                border: 1px solid #9d8189;
+                width: 70%;
+                margin: 5px 0;
+                padding: 10px;
+                
+
+            }
+            
+            .btnTarea{
+                border: none;
+                width: 28%;
+                height: auto;
+                text-align: center;
+                cursor: pointer;
+                background-color: #f4acb7;
+                color: #fff;
+                border-radius: 5px;
+                display: block;
+                margin-left: auto;
+                margin-top: 5px;
+                padding: 0 20px 0 20px;
+
+                
+            }
+            button:hover{
+                background-color: #ba0562;
+            }
+        }
+        .listaTareas{
+            display:inline-block;
+            width: 100%;
+
+            .box{
+                box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+                padding: 10px;
+                background-color: #9d8189;
+                color: #fff;
+                margin-top: 10px;
+            }
+
+            li{
+                list-style: none;
+                display: flex;
+                
+                
+
+                button{
+                    border: 1px solid #fff;
+                    color:#fff ;
+                    border-radius: 100%;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    background-color: transparent;
+                    width: 20px;
+                    height: 20px;
+                    
+                    
+                }
+                .eliminarItem{
+                    display: block;
+                    border: none;
+                    margin-right: aut0;
+                    margin-left: auto;
+                    cursor: pointer;
+                }
+                
+                
+            }
+            .tachar{
+                        text-decoration: line-through;
+                    }
+            .icon{
+                    text-align: center;
+                     color: #a7c957;
+                    background-color: #a7c957;
+                 }
+                
+
+
+            
+        }
+    }
+    .contenedorTareas2{
+        flex: 1 1 30%;
+        background-color: #edede9;
+        padding: 5px;
+        width: 400px;
+        height: 500px;
+        overflow:auto;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        position: relative;
+
+        #calendar {
+            width: 300px;
+            margin: 100px auto;
+            text-align: center;
+        }
+        
+        #calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        button {
+            background-color: #d28a9f;
+            border-radius: 3px;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        button:hover {
+            background-color: #ba0562;
+        }
+        .today {
+            background-color: #f579af; /* Fondo amarillo */
+            color: #fff; /* Texto negro */
+            font-weight: bold;
+        }
+        
+        
+        
+    }
+    .contenedorTareas3{
+        background-color: #ffe5ec73;
+        padding: 5px;
+        width: 400px;
+        height: 500px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        flex:1 1 30%;
+        overflow: auto;
+        
+
+        .box-cont{
+            background-color: #fff;
+            width: 90%;
+            height: 200px;
+            margin-top: 30px;
+            border-radius: 10px;
+            margin-left: 20px;
+            overflow: auto;
+             
+             
+             .agregarNotaP{
+                width: 90%;
+                margin: auto;
+                margin-top: 20px;
+                height: 50%;
+                border-radius: 5px;
+                background: #9d818921;
+                padding: 20px;
+                font-size: 1em;
+                font-family: cursive;
+                display: flex;
+                justify-content: space-between;
+
+                 .eliminarItem{
+                    border: none;
+                 }
+             }
+             
+             
+        }
+        .contenedor{
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            
+
+            button{
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                background-color: #f4acb7;
+                color: #fff;
+                cursor: pointer;
+                margin: 0 10px;
+
+            }
+            button:hover{
+                background-color: #ba0562;
+            }
+            h2{
+                font-family: cursive;
+                margin: 0 10px;
+
+                
+            }
+            
+            input{
+                background-color: rgba(119, 136, 153, 0.1);
+                border: none;
+                padding: 10px;
+
+            }
+
+            
+            
+        }
+        
+            
+    }
+    .listaCitas{
+        border-bottom: 1px solid #9d818971;
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        list-style: none;
+        font-family:cursive;
+        box-shadow: 2px 2px 2px 1px rgba(229, 147, 147, 0.2);
+        display: flex;
+
+        button{
+            color:#9d8189;
+            margin-right: 10px;
+            cursor: pointer;
+            background-color: transparent;
+            width: 20px;
+            height: 20px;
+            
+            
+        }
+        
+        .eliminarItem{
+            display: block;
+            border: none;
+            margin-right: aut0;
+            margin-left: auto;
+            cursor: pointer;
+        }
+        
+     }
+     
+    
+
+    
+}
+footer{
+    background-color: #9d8189b9;
+    color: #000;
+    font-family:cursive;
+    display: flex;
+    justify-content:space-between;
+    padding: 5px;
+    margin: 10px;
+
+    p{
+        margin: 10px;
+        font-size: 1em;
+    }
+    button{
+        border: none;
+        background-color: transparent;
+    }
+    a{
+        background: transparent;
+        border: none;
+        color: #fff;
+        margin: 5px;
+        font-size: 25px;
+        cursor: pointer;
+        display: block;
+        
+    }
+    a:hover{
+        color: #f6b1c5;
+    }
+    .derechos{
+        display: flex;
+    }
+}
+.dark {
+    background-color: #463f3a;
+    
+    header{
+        background-color: #bcb8b1;
+    }
+    .btn-color{
+        border: none;
+        font-size: 30px;
+        background-color: #000;
+        cursor: pointer;
+        color: #ffcad4;
+    }
+
+    .contenedorTareas{
+        box-shadow: 2px 2px 2px 1px rgba(164, 159, 159, 0.662);
+    }
+    
+
+}
+
+/*@media screen and (max-width: 800px){
+    .tareas{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    article{
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+    
+    
+}*/
+
+
