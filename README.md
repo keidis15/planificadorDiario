@@ -1,0 +1,2 @@
+# planificadorDiario
+Planiicador de Tareas 
